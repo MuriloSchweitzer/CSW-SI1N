@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5</title>
+</head>
+<body>
+    <H1>Principais Formatações</H1>
+    <hr>
+    
+    <h2>Negrito/Destaque</h2>
+    <p>Frase em <b>negrito</b> sem semântica</p>
+    <p>Frase em <strong>destaque</strong> com semântica</p>
+    
+    <h2>Itálico/Ênfase</h2>
+    <p>Frase em <i>itálico</i> sem semâmtica</p>
+    <p> Frase em <em>ênfase</em> com semântica</p>
+        
+        <h2>Texto Marcador</h2>
+        <p>Usando texto com <mark style="background:green"> marcador</mark></p>
+        <p>usnado tesxto com <mark>marcador</mark></p>
+        
+        <h2>Texto grande e pequeno</h2>
+        <p>Estamos trabalhando com <big>texto grande</big> e um <small>texto pequeno</small></p>
+        
+        <h2>Texto deletado</h2>
+        <p>paragrafo com texto que foi <del>excluido</del></p>
+        
+        <h2>Texto inserido</h2>
+        <p>Frase com texto <ins>inserido</ins> sem semântica</p>
+        <p>Frase com texto <u>inserido</u> com semâmtica</p>
+        
+        <h2>Texto sobrescrito e subescrito</h2>
+        <p>desmontração de equação do 2° grau. EX.: ax<sup>2</sup>+bx+c=0</p>
+        <p>desmontração da fórmula da água H<SUB>2</SUB>O</p>
+        
+        <H2>Trecho de código fonte </H2> 
+        <p>Neste exemplo vou desmonstrar um trecho de código em Python</p>
+            <br>
+            <pre><code>import pandas as pd
+
+                # Exemplo de dados
+                data = pd.DataFrame({'valor': [10, 12, 12, 13, 100, 15, 16, 17, 18, 200]})
+                
+                # Calculando o primeiro (Q1) e o terceiro quartil (Q3)
+                Q1 = data['valor'].quantile(0.25)
+                Q3 = data['valor'].quantile(0.75)
+                
+                # Calculando o intervalo interquartil (IQR)
+                IQR = Q3 - Q1
+                
+                # Definindo os limites inferior e superior para detectar outliers
+                limite_inferior = Q1 - 1.5 * IQR
+                limite_superior = Q3 + 1.5 * IQR
+                
+                # Removendo os outliers
+                data_sem_outliers = data[(data['valor'] >= limite_inferior) & (data['valor'] <= limite_superior)]
+                
+                print(data_sem_outliers)
+                </code></pre>
+                
+                <H2>Citações (quotation) simples</H2>
+                <p>segundo  Steve Jobs <q>a tecnologia move o mundo </q></p>
+            
+                <H2>Citações completas (livros)</H2>
+                <p>Moby Dick de Herman Melville:</p>
+                <blockquote"Moby> Chame-me Ismael. Alguns anos atrás — nunca me esqueço quando foi — tendo pouco ou nenhum dinheiro no bolso, e nada em particular para me interessar na terra, resolvi navegar um pouco e ver o mundo. Era uma maneira de afastar a melancolia e fazer com que os meus pensamentos se acalmassem. Sempre que fico entediado, sempre que as coisas parecem se tornar mais monótonas, sempre que sinto que não posso mais suportar o peso da vida, então, sou guiado ao mar. A maré me chama, e quando a maré me chama, é quando me sinto mais vivo.”</blockquote>
+
+<h2>Abreviações</h2>
+<p>Estamos estudando <abbr title="Hypertext Markup Language">HTML</abbr></p>
+
+<h2>Texto Invertido</h2>
+<bdo dir="rtl">estudando CSS</bdo>
+
+</body>
+</html>
