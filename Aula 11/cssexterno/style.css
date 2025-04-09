@@ -1,0 +1,13 @@
+body{
+    font-family: monospace;
+    background-color: blue;
+    color: whitesmoke;
+}
+h1{
+    font-size: 4em;
+    color:yellow;
+}
+a{
+    font-size: 24px;
+    color:palevioletred;
+}
